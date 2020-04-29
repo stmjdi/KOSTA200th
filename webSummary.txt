@@ -6,3 +6,22 @@ Java - JDBC (Oracle) - Web	JSP/Servlet
 				HTML (Markup language) // CSS // JS
 				* react / Nodejs / AngularJ .. <-- JS
 				Spring Framework
+
+-----------------------------------------------------------------------
+
+Client  &  Server // Front & Back - end 개념
+
+http protocol -- 통신 프로토콜 // http Port ??
+웹 -- Pool 개념
+
+-----------------------------------------------------------------------
+
+- Web 동작 원리
+	-- Server Side Script : JSP/Servlet, asp, aspx, php ...  //  Tomcat, apacheTomcat
+	-- Client Side Script : HTML,CSS,JS,VBScript... // 해석 자체가 브라우저에 있음
+
+html : 유연하다, 대소문자 구분 X
+
+cf) xml : 엄격하다?
+
+
