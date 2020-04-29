@@ -1,0 +1,8 @@
+S/W 	- System Software (OS)
+	- Application Software	  /	C/C++	- API
+						- MFC
+						- C# ... 
+Java - JDBC (Oracle) - Web	JSP/Servlet
+				HTML (Markup language) // CSS // JS
+				* react / Nodejs / AngularJ .. <-- JS
+				Spring Framework
