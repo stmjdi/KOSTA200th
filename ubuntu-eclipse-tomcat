@@ -4,5 +4,8 @@ https://coding-factory.tistory.com/62 -- 우분투에서 이클립스-톰캣
 https://m.blog.naver.com/PostView.nhn?blogId=lestat85&logNo=150166849626&proxyReferer=https:%2F%2Fwww.google.com%2F
 -- 우분투 이클립스-톰캣 연동 안될 때 해결
 
-이클립스-톰캣 실행 해결 링크
+이클립스-톰캣 실행 해결 링크 --- 환경변수 설정
 -  defacto-standard.tistory.com/285
+
+~~.tar.gz 압축 풀고 디렉토리 권한이 555?인 경우 -- 디렉토리 전체 권한 부여로 권한 제한 해제
+      -- 만약 eclipse에서 tomcat을 연동할 때 fail to start 에러창이 뜰 시 해결 방법이 될 수 있다!
