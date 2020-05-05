@@ -24,4 +24,6 @@ html : 유연하다, 대소문자 구분 X
 
 cf) xml : 엄격하다?
 
+https://kamang-it.tistory.com/entry/JSP%ED%86%B0%EC%BA%A3-%EC%84%9C%EB%B2%84-%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4%EB%A1%9C-%EA%B5%AC%EB%8F%99-JSP%EA%B0%84%EB%8B%A8%ED%95%9C-%EC%98%88%EC%A0%9C-%EC%8B%A4%ED%96%89 -- 이클립스/톰캣 연동 간단 예제
+
 
