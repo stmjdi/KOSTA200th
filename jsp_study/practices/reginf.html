@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+
+    <style>
+        header{
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size:50px;
+            text-align:center;
+
+            padding-top:40px;
+            padding-bottom:50px;
+        }
+
+        .regcore{
+            border-style:solid;
+            border-width:1px;
+
+            padding:30px;
+            text-align:justify;
+            padding-left:50px;
+        }
+
+        .tab{
+            white-space:pre;
+        }
+        /* <span class="tab">&#9;&#9;&#9;&#9;</span> */
+        .ft{
+            text-align:center;
+        }
+        
+    </style>
+</head>
+
+<body>
+<header><strong>Register</strong></header>
+
+<section class="regcore">
+<form action="#" method="post">
+ID : <input type="text" name="idWin" placeholder="enter id"><br><br>
+Password : <input type="password" name="pwdWin" placeholder="enter password"><br><br>
+Name : <input type="text" name="nameWin" placeholder="enter name"><br><br>
+Tel : <input type="text" name="telWin" placeholder="enter tel nums" size="5px"> - <input type="text" name="telWin" size="6px"> - <input type="text" name="telWin" size="6px"><br><br>
+Email : <input type="text" name="emlWin" placeholder="emailID"> @ 
+<select name="mails">
+    <option value="">choose email</option>
+    <option value="google">gmail.com</option>
+    <option value="naver">naver.com</option>
+    <option value="daum">daum.net</option>
+    <option value="nate">nate.com</option>
+</select><br><br>
+Job : 
+<select name="job">
+    <option name="">select the job</option>
+    <option name="student">student</option>
+    <option name="doctor">Doctor</option>
+    <option name="firefighter">Fire Fighter</option>
+    <option name="professor">Professor</option>
+</select>
+Gender : <input type="checkbox" name="gender" value="male">Male <input type="checkbox" name="gender" value="female"> Female<br><br>
+Address : <input type="text" name="addr"> <input type="button" onclick="location.href='#'" name="addrpost" value="search.."><br>
+<span class="tab">&#9;&#9;&nbsp;&nbsp;</span><input type="text" name="specaddr" placeholder="specifically.."><br><br>
+Hobby : <input type="checkbox" name="hb1">Travel <input type="checkbox" name="hb2">Reading <input type="checkbox" name="hb3">Walking<br><br>
+Self-introduction <br><textarea colss="40" rows="10"> </textarea>
+</form>
+</section>
+<br>
+<div class="ft">
+    <input type="submit" value="submit">
+</div>
+<br>
+</body>
+
+
+</html>

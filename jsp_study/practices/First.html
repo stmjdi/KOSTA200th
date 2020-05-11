@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test Page (Form tag Example)</title>
+<style>
+    body{
+        background-color:cornflowerblue
+    }
+
+    a{
+        background-color:olive;
+        font-style:italic;
+        text-decoration:none;
+        
+    }
+
+    a:hover{
+        background-color:orangered;
+        font-size:150%;
+    }
+    a:visited{ color:black;}
+    .aa{
+        line-height:300%;
+        padding:30px;
+    }
+
+    header{
+        border-bottom-style:solid;
+        border-bottom-color:darkmagenta;
+        padding:30px;
+    }
+
+    .nav1{
+        text-align:center;
+    }
+
+    .inner{
+        border-style:solid;
+        border:rgb(47, 50, 255);
+        border-width:10px;
+    }
+
+    .asd{
+        float:right;
+        border-left-style:solid;
+        border-left-color:green;
+        border-left-width:3px;
+        border-bottom-style:solid;
+        border-bottom-color:limegreen;
+        padding:auto;
+        text-align: center;
+        line-height: 100px;
+    }
+
+    .inna{
+        font-size:medium;
+    }
+
+    .divinsec{
+        padding:50px;
+        
+        margin:30px;
+        /*border-style:solid;*/
+        width:83%;
+        text-align:center;
+
+    }
+
+    .logo{
+        background-color:gainsboro;
+    }
+
+    .logo:hover{
+        background-color:hotpink;
+
+    }
+</style>
+
+</head>
+<body>
+    <header style="background-color:dodgerblue"> 
+    <h1 align=center style="color:white; font-family:Arial, Helvetica, sans-serif"> This is the Test Page </h1>
+    <div class="inner" align=center>
+        <a href="First.html" class="logo"> <font size=6 color="red"><strong>First</strong></font> Page</a>
+        
+    </div>
+    <br>
+    <nav class="nav1">
+        <a class="aa" href="#">Second Page</a>
+        <a class="aa" href="#">Third Page</a>
+        <a class="aa" href="#">Fourth Page</a>
+    </nav>
+    </header>
+
+    <aside>
+    <div class="asd">
+        <a href="#"><font size=150%>num1</font></a><br>
+        <a href="#"><font size=150%>num2</font></a><br>
+        <a href="#"><font size=150%>num3</font></a><br>
+        <a href="#"><font size=150%>num4</font></a><br>
+    </div>
+    </aside>
+    <br>
+    <section class="loginWindow">
+        <div class="divinsec">
+            <form action="#" method="post">
+
+                <font size=5px><strong>ID</strong></font>:<br> <input type="text" name="idid" placeholder="email"><br><br>
+                <font size=5px><strong>Password</strong></font>:<br> <input type="password" name="pwd" placeholder="password"><br><br>
+
+                <input type="submit" value="login"><br><br>
+                <input type="reset" value="reset"><br><br>
+                <input type="button" onclick="location.href='reginf.html'" value="Register">
+            </form>
+
+            
+        </div>
+
+    </section>
+</body>
+</html>
