@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="EUC-KR">
+	<title>Key point</title>
+	<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('p').each(function(index){
+				console.log(this);
+				$(this).attr({"id":"param-"+index});
+			});
+			
+			$('#btn').click(function(){
+				alert($('#param-0').text());
+			});
+			
+			//var arr = new Array();
+			var array=[
+			           {name:"naver",link:"http://www.naver.com"},
+			           {name:"daum",link:"http://www.daum.net"},
+			           {name:"kakao",link:"http://www.kakao.com"}
+			          ];
+			//array[0].name
+			$.each(array,function(index,obj){
+				console.log(index + " / " + obj + " / " + obj.name + " / " + obj.link );
+			});
+			
+		});
+	</script>
+</head>
+<body>
+	<p>java</p>
+	<p>jquery</p>
+	<p>Ajax</p>
+	<input type="button" value="click" id="btn">
+</body>
+</html>

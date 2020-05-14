@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="EUC-KR">
+	<title>Insert title here</title>
+		<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$('button').click(function(){
+					$(this).replaceWith('<div>' + $(this).text() + "</div>");
+				});
+			
+				$('#btnEmpty').click(function(){
+					$('#mydiv').empty(); //child nodes remove
+					$('#mydiv').append('<b>hello</b>') //child add
+				});
+				
+				$('#btnRemove').click(function(){
+					$('#mydiv').remove(); //#mydiv remove
+				});
+				
+				$('#dbbtnclick').dblclick(function(){
+					var msg = $('#mydiv2').width() + " / " + $('#mydiv2').height();
+					alert(msg);
+				});
+			});
+		</script>
+</head>
+<body>
+	<button>FirstButton</button>
+	<button>SecondButton</button>
+	<button>ThirdButton</button>
+	
+	<hr>
+	<input type="button" id="btnEmpty" value="empty"><br>
+	<input type="button" id="btnRemove" value="remove"><br>
+	<hr>
+	<div id="mydiv">
+		<p>java</p>
+		<p>jquery</p>
+	</div> 
+	<hr>
+	<div id="mydiv2">
+		<input type="button" id="dbbtnclick" value="전송">
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
