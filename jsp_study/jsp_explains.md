@@ -25,4 +25,46 @@
 - 주석
 <pre><code>
 //, /* */
-</
+</code></pre>
+
+- 예제
+'''
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <%@page import="java.io.*"%>
+    <%@page import="java.util.*" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ex01_basic.jsp</title>
+</head>
+<body>
+<!-- 선언문 : 자바, 변수 선언, 함수, ... but 제어문, 출력문 안됨-->
+<%!
+	class Pair{
+		int first, second;
+		public Pair(int f, int s){
+			first=f;
+			second=s;
+		}
+	}
+
+	int Abs(int n){
+		return n>=0?n:-n;
+	}
+
+%>
+
+<!-- 스크립트릿 : 변수 선언, 자바 코드, 제어문, 출력문 but 함수 선언 x-->
+<%
+	Pair p = new Pair(-1,2);
+	
+%>
+
+<!-- 표현식 -->
+<%= "Here is the space for expressions<br><br>" %>
+<%= p.first+" "+p.second%>
+</body>
+</html>
+'''
