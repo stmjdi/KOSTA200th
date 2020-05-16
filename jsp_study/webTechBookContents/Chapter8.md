@@ -9,8 +9,8 @@ introduce about various functions like 'forward','binding','annotation' etc
   - not pass to client from server when forwarding
 
 ## [Binding](#binding)
-- request.sendRedirect -> fail to transmit contents
-  ---> __<b>RequestDispatcher</b>__ object use
+- request.sendRedirect -> fail to transmit contents<br>
+  ---> <b>__RequestDispatcher__</b> object use
 
 
 - - -
