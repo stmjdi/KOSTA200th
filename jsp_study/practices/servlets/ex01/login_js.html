@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Login Page</title>
+
+        <script>
+            function fn_validate(){
+                var frmLogin = document.frmLogin;
+                var user_id = frmLogin.user_id.value;
+                var user_pw = frmLogin.user_pw.value;
+                
+                if((user_id.length==0||user_id=="")||(user_pw.length==0||user_pw=="")){
+                    alert("should type ID and Password")
+                }else{
+                    frmLogin.method="post";
+                    frmLogin.action="login5";
+                    frmLogin.submit();
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <form name="frmLogin" action="login" method="post" encType="UTF-8">
+            ID : <input type="text" name="user_id"><br>
+            Password : <input type="text" name="user_pw"><br>
+            <input type="button" onclick="fn_validate()" value="login">
+            <input type="reset" name="type again">
+              <!-- 화면에 보이지 않게 하면서 Servlet으로 전송 -->
+            <input type="hidden" name="user_address" value="Cheongbuk, Seoul">
+        </form>
+    </body>
+</html>
