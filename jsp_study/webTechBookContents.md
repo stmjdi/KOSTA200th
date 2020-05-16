@@ -1,3 +1,5 @@
+# chapter 7
+
 - 웹 어플리케이션 구성요소 및 기능
   - webShop : 웹 어플리케이션의 루트 디렉터리 -- JSP, HTML파일 저장됨
   - WEB-INF : 웹 어플리케이션에 관한 정보 저장
@@ -15,8 +17,8 @@
   - src : 자바 소스 파일 저장
 
 - Core method at first
-  - doGet
-  - doPost
+  - [doGet](#doGet)
+  - [doPost](#doPost)
 <pre><code>
 * if you want to handle both, use 'doHandle'
 </code></pre>
@@ -26,5 +28,9 @@
     - eclipse/oracle 연동
     - ojdbcx.jar파일을 lib 폴더에 위치
   - DataSource
-    - ConnectionPool
-      - JNDI
+    - [ConnectionPool](#ConnectionPool)
+      - [JNDI](#JNDI)
+
+- - -
+
+
