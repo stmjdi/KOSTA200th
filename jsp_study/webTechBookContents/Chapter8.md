@@ -17,8 +17,8 @@ introduce about various functions like 'forward','binding','annotation' etc
   - removeAttribute(String name)
 
 ## ServletContext & ServletConfig
-- [ServletContext](# ServletContext)
-- [ServletConfig](# ServletConfig)
+- [ServletContext](#ServletContext)
+- [ServletConfig](#ServletConfig)
 
 
 - - -
