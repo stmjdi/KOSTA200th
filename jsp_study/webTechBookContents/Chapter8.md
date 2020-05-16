@@ -8,6 +8,10 @@ introduce about various functions like 'forward','binding','annotation' etc
 - dispatch (RequestDispatcher xx = request.getRequestDispatcher)
   - not pass to client from server when forwarding
 
+## [Binding](#binding)
+- request.sendRedirect -> fail to transmit contents
+  ---> __<b>RequestDispatcher</b>__ object use
+
 
 - - -
 
