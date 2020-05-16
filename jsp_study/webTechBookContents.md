@@ -33,4 +33,43 @@
 
 - - -
 
+## doGet
+- example
+<pre><code>
+protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		//response.getWriter().append("Served at: ").append(request.getContextPath());
+		
+		response.setContentType("text/html;charset='utf-8'");
+		String id = request.getParameter("id");
+		String pw = request.getParameter("pwd");
+		
+		PrintWriter out = response.getWriter();
+		if(id.equals(user) && pw.equals(pwd)) {
+			out.println("<html><body>Login Success</body></html>");
+		}
+		else {
+			out.println("<html><body>Login Failed <br>(wrong login access)</body></html>");
+		}
+		
+}
+</code></pre>
 
+## doPost
+-example
+<pre><code>
+protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doGet(request, response);
+}
+</code></pre>
+
+## Connection Pool
+> 필요할 때 마다 미리 연결해 놓은 상태를 이용해 빠르게 DB와 연동하여 작업하기 위해
+> 미리 DB와 연결시킨 상태를 유지하는 기술.
+### ConnectionPool 동작 과정
+> Tomcat 컨테이너 실행 시 ConnectionPool 객체 생성
+> 생성된 커넥션 객체를 DB와 연결
+> DB와 연동 작업이 필요할 때 응용 프로그램은 ConnectionPool에서 제공하는 메소드 호출하여 연동
+
+## JNDI
+> (Java Naming and Directory Interface)
+> 필요한 자원을 key/value 쌍으로 저장 후 필요할 때 키를 이용해 값을 얻는 방법
