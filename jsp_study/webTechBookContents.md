@@ -20,3 +20,11 @@
 <pre><code>
 * if you want to handle both, use 'doHandle'
 </code></pre>
+
+- Servlet에서 oracleDB 사용하기
+  - servlet/oracle 연동
+    - eclipse/oracle 연동
+    - ojdbcx.jar파일을 lib 폴더에 위치
+  - DataSource
+    - ConnectionPool
+      - JNDI
