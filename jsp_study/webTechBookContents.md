@@ -17,6 +17,6 @@
 - Core method at first
   - doGet
   - doPost
-'''
-* if you want to handle both, use 'doHandle'
-'''
+
+  * if you want to handle both, use 'doHandle'
+
