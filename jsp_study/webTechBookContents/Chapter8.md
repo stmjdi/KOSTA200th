@@ -16,6 +16,10 @@ introduce about various functions like 'forward','binding','annotation' etc
   - getAttribute(String name)
   - removeAttribute(String name)
 
+## ServletContext & ServletConfig
+- [ServletContext](# ServletContext)
+- [ServletConfig](# ServletConfig)
+
 
 - - -
 
@@ -27,6 +31,7 @@ introduce about various functions like 'forward','binding','annotation' etc
   - 요청에 대한 정보를 포함시켜 다른 Servlet에 전달
   - Model2 개발 시 Servlet->JSP 로 데이터를 전달
   
+  
 ### binding
 : '두 개를 하나로 묶는다' -- 웹 프로그램 실행시 자원(데이터)을 Servlet 관련 객체에 저장하는 방법
 - Servlet에서 다른 Servlet/JSP로 대량의 데이터를 공유/전달하고 싶을 때 사용
@@ -37,3 +42,29 @@ introduce about various functions like 'forward','binding','annotation' etc
 > : 각 객체에 바인딩된 자원(데이터)을 name으로 가져옴<br>
 > <b>removeAttribute(String name)</b>
 > : 각 객체에 바인딩된 자원(데이터)를 name으로 제거<br>
+
+
+### ServletContext
+> 웹 애플리케이션이 실행되면서 애플리케이션 전체의 공통 자원이나 정보를 미리 바인딩<br>
+> ---> Servlet들이 공유하여 사용
+- 특징
+  - javax.servlet.ServletContext로 정의 (관련 메소드 doc 참고)
+  - Servlet & Container 간의 연동을 위해 사용
+  - context(web application)마다 하나의 ServletContext가 생성
+  - Servlet끼리 자원(데이터)을 공유하는 데 사용
+  - Container 생성 -> 생성  /  Container 소멸 -> 소멸
+- 기능
+  - Servlet에서 파일 접근 기능
+  - 자원 바인딩 기능
+  - 로그 파일 기능
+  - context에서 제공하는 설정 정보 제공 기능
+
+
+
+
+
+
+
+
+
+
