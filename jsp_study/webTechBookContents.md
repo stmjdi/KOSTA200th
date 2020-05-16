@@ -13,3 +13,10 @@
   - bin : 어플리케이션에서 사용되는 실행 파일들 위치
   - conf : 프레임워크에서 사용하는 각종 설정 파일 저장
   - src : 자바 소스 파일 저장
+
+- Core method at first
+  - doGet
+  - doPost
+'''
+* if you want to handle both, use 'doHandle'
+'''
