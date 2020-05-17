@@ -60,6 +60,11 @@ introduce about various functions like 'forward','binding','annotation' etc
   - context에서 제공하는 설정 정보 제공 기능
 
 
+### ServletConfig
+> Interface로 선언되어 있으며, 여기에 선언된 여러 메소드를 통해 Servlet 관련 기능을 사용
+- 제공하는 기능
+  - ServletContext 객체를 얻는 기능
+  - Servlet에 대한 초기화 작업 기능
 
 
 
