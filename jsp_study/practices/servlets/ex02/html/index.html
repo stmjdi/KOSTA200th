@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Log-in </title>
+
+        <style>
+            body{
+                text-align:center;
+                
+            }
+            header{
+                padding:30px;
+                margin:20px;
+            }
+            hr{
+                border-width:1px;
+            }
+            #sec1{
+                margin:10px;
+                align-items: center;
+                align-content: center;
+                text-align:center;
+                display:table-cell;
+            }
+
+            table{
+                text-align:left;
+                padding:5px;
+                margin:30px;
+            }
+            td{
+                padding-left:10px;
+                padding-right:10px;
+            }
+
+            #uid{
+                border-width:1px;
+                border-color:cadetblue;
+                
+            }
+            #pwd{
+                border-width:1px;
+                border-color:cadetblue;
+            }
+
+            input{
+                margin:10px;
+            }
+        </style>
+
+    </head>
+    <body>
+        <header>
+        <h1> Log-in Page</h1>
+        </header>
+        <hr>
+        <section id="sec1">
+            <form action="../Login" method="post">
+            <table>
+                <tr>
+                    <td>ID: </td>
+                    <td><input type="text" id="uid" name="uid"></td>
+                </tr>
+                <tr>
+                    <td>Password: </td>
+                    <td><input type="password" id="pwd" name="pwd"></td>
+                </tr>
+            </table>
+            <input type="submit" value='Submit'>
+            <input type="reset" value="Reset">
+            </form>
+        </section>
+        <br><br>
+        <button id="reg" onclick="location.href='regis.html'">Register</button>
+    </body>
+</html>
