@@ -2,7 +2,7 @@
 
 1. [Session Tracking](#Session-Tracking)
 
-2. Connecting Web pages with using <hidden> tag & URL Rewriting
+2. Connecting Web pages with using "hidden" tag & URL Rewriting
 - [<hidden> tag](#"hidden"-tag)
 - [URL Rewriting](#url-rewriting)
 
@@ -34,3 +34,19 @@ HTTP 프로토콜 - Server-Client 통신 시 stateless 방식으로 통신
 
 
 ## "hidden" tag
+> HTML의 "hidden" 태그를 이용해 웹 페이지들 사이의 정보 공유
+> 브라우저에는 표시되지 않지만 미리 저장된 정보를 Servlet으로 전송할 수 있음
+> input type="<hidden>" 형식으로 Servlet으로 전송
+
+## URL Rewriting
+> GET 방식으로 URL 뒤에 정보를 붙여 다른 페이지로 전송
+
+
+
+
+
+
+
+
+
+
