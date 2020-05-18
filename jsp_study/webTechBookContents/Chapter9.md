@@ -81,6 +81,59 @@ HTTP 프로토콜 - Server-Client 통신 시 stateless 방식으로 통신
   </tr>
 </table>
   
+## Cookie Process
+1. 브라우저로 사이트에 접속
+2. 서버는 정보를 저장한 쿠키를 생성
+3. 생성된 쿠키를 브라우저로 전송
+4. 브라우저는 서버로부터 받은 쿠키 정보를 쿠키 파일에 저장
+5. 브라우저가 다시 접속해 서버가 브라우저에게 쿠키 전송을 요청하면 브라우저는 쿠키 정보를 서버에 넘겨줌
+6. 서버는 쿠키 정보를 이용해 작업 진행
+
+
+## Cookie API
+> Cookie 클래스 객체를 생성하여 정보를 저장한 후 서버에서 client로 전송해 파일로 저장
+- Cookie API 특징
+  - javax.servlet.http.Cookie
+  - HttpServletResponse의 addCookie()메소드를 이용해 client browser에 cookie를 전송한 후 저장
+  - HttpServletRequest의 getCookie()메소드를 이용해 cookie를 서버로 가져옴
+- Cookie methods
+<table>
+  <tr>
+    <td>getComment()</td>
+    <td>쿠키에 대한 설명을 가져옴</td>
+  </tr>
+  <tr>
+    <td>getComment()</td>
+    <td>쿠키에 대한 설명을 가져옴</td>
+  </tr>
+  <tr>
+    <td>getDomain()</td>
+    <td>쿠키의 유효한 도메인 정보를 가져옴</td>
+  </tr>
+  <tr>
+    <td>getMaxAge()</td>
+    <td>쿠키에 대한 설명을 가져옴</td>
+  </tr>
+  <tr>
+    <td>getComment()</td>
+    <td>쿠키에 대한 설명을 가져옴</td>
+  </tr>
+  <tr>
+    <td>getComment()</td>
+    <td>쿠키에 대한 설명을 가져옴</td>
+  </tr>
+  <tr>
+    <td>getComment()</td>
+    <td>쿠키에 대한 설명을 가져옴</td>
+  </tr>
+  <tr>
+    <td>getComment()</td>
+    <td>쿠키에 대한 설명을 가져옴</td>
+  </tr>
+  <tr>
+    <td>getComment()</td>
+    <td>쿠키에 대한 설명을 가져옴</td>
+  </tr>
   
 
 
