@@ -40,7 +40,7 @@ HTTP 프로토콜 - Server-Client 통신 시 stateless 방식으로 통신
 
 ## URL Rewriting
 > GET 방식으로 URL 뒤에 정보를 붙여 다른 페이지로 전송
-
+> <a> tag를 활용하여 다른 Servlet
 
 
 
