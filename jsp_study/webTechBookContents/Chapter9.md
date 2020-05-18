@@ -43,6 +43,45 @@ HTTP 프로토콜 - Server-Client 통신 시 stateless 방식으로 통신
 > "a" tag를 활용하여 다른 Servlet으로 넘김
 
 
+## Cookie
+> 웹 페이지들 사이의 공유 정보를 Client PC에 저장해 놓고 필요할 때 여러 웹 페이지들이 공유해서 사용할 수 있도록 매개 역할을 하는 방법
+- 특징
+  - 정보가 Client PC에 저장
+  - 저장 정보 용량에 제한 (file capacity : 4kb)
+  - 보안이 취약
+  - Client Browser에서 사용 유무 설정 가능
+  - 도메인 당 cookie가 만들어짐 (웹 사이트 당 하나의 cookie)
+
+- Cookie 종류
+<table>
+  <tr>
+    <td>속성</td>
+    <td>Persistence Cookie</td>
+    <td>Session Cookie</td>
+  </tr>
+  <tr>
+    <td>생성 위치</td>
+    <td>파일로 생성</td>
+    <td>브라우저 메모리에 생성</td>
+  </tr>
+  <tr>
+    <td>종료 시기</td>
+    <td>쿠키를 삭제하거나 쿠키 설정 값이 종료된 경우</td>
+    <td>브라우저를 종료한 경우</td>
+  </tr>
+  <tr>
+    <td>최초 접속 시 전송 여부</td>
+    <td>최초 접속 시 서버로 전송</td>
+    <td>최초 접속 시 서버로 전송되지 않음</td>
+  </tr>
+  <tr>
+    <td>용도</td>
+    <td>로그인 유무 또는 팝업창을 제한할 때</td>
+    <td>사이트 접속 시 Session 인증 정보를 유지할 때</td>
+  </tr>
+</table>
+  
+  
 
 
 
