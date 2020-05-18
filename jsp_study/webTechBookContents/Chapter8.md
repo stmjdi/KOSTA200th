@@ -65,7 +65,11 @@ introduce about various functions like 'forward','binding','annotation' etc
 - 제공하는 기능
   - ServletContext 객체를 얻는 기능
   - Servlet에 대한 초기화 작업 기능
-
+- load-on-startup 기능
+  - tomcat container가 실행되면서 미리 Servlet을 실행
+  - 지정한 숫자가 0보다 크면 tomcat container가 실행되면서 Servlet을 초기화
+  - 지정한 숫자 = 우선순위 , 작은 숫자부터 먼저 초기화
+  * 브라우저의 요청에 의해 web.xml로부터 가져오는 시간보다 미리 ServletContext객체로 값들을 가져다 놓은 후 Servlet 실행 시 사용하는 것이 더 빨리 요청을 처리할 수 있음.
 
 
 
