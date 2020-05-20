@@ -145,7 +145,76 @@ HTTP 프로토콜 - Server-Client 통신 시 stateless 방식으로 통신
   </table>
   
   
+## Session Process
+1. 브라우저로 사이트 접속
+2. 서버는 접속한 브라우저에 대한 session 객체 생성
+3. 서버는 생성된 session id를 client browser에 응답
+4. 브라우저는 서버로부터 받은 session id를 브라우저가 사용하는 메모리의 session cookie에 저장 (jsesessionId)
+5. 브라우저가 재접속하면 브라우저는 session cookie에 저장된 session id를 서버에 전달
+6. 서버는 전송된 session id를 이요해 해당 session에 접근하여 작업을 수행
 
+## Session API
+<table>
+  <tr>
+    <th>Return Type</th>
+    <th>Method</th>
+    <th>Explain</th>
+  </tr>
+  <tr>
+    <td>Object</td>
+    <td>getAttribute(String name)</td>
+    <td>속성 이름이 name인 속성 가밧을 Object 타입으로 반환. 해당 속성 이름이 없을 경우 null 값을 반환</td>
+  </tr>
+  <tr>
+    <td>Enumeration</td>
+    <td>getAttributeNames()</td>
+    <td>session 속성 이름들을 Enumeration 객체 타입으로 반환</td>
+  </tr>
+  <tr>
+    <td>long</td>
+    <td>getCreationTime()</td>
+    <td>1970년 1월 1일 0시 0분을 기준으로 현재 session이 생성된 시간까지 경과한 시간을 계산하여 1/1000초 값으로 반환ㄱ</td>
+  </tr>
+  <tr>
+    <td>String</td>
+    <td>getId()</td>
+    <td>session에 할당된 고유 식별자를 String 타입으로 반환</td>
+  </tr>
+  <tr>
+    <td>int</td>
+    <td>getMaxInactiveInterval()</td>
+    <td>현재 생성된 session을 유지하기 위해 설정된 session 유지 시간을 int 타입으로 반환</td>
+  </tr>
+  <tr>
+    <td>void</td>
+    <td>invalidate()</td>
+    <td>현재 생성된 session을 소멸</td>
+  </tr>
+  <tr>
+    <td>boolean</td>
+    <td>removeAttribute(String name)</td>
+    <td>session 속성 이름이 name인 속성을 제거</td>
+  </tr>
+  <tr>
+    <td>void</td>
+    <td>setAttribute(String name,Object value)</td>
+    <td>session 속성 이름이 name인 속성에 속성 값으로 value를 할당</td>
+  </tr>
+  <tr>
+    <td>void</td>
+    <td>setMaxInactiveInterval(int interval)</td>
+    <td>session을 유지하기 위한 session 유지 시간을 초 단위로 설정</td>
+  </tr>
+</table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
 
 
 
