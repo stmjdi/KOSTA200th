@@ -112,28 +112,38 @@ HTTP 프로토콜 - Server-Client 통신 시 stateless 방식으로 통신
   </tr>
   <tr>
     <td>getMaxAge()</td>
-    <td>쿠키에 대한 설명을 가져옴</td>
+    <td>쿠키 유효 기간을 가져옴</td>
   </tr>
   <tr>
-    <td>getComment()</td>
-    <td>쿠키에 대한 설명을 가져옴</td>
+    <td>getName()</td>
+    <td>쿠키 이름 가져옴</td>
   </tr>
   <tr>
-    <td>getComment()</td>
-    <td>쿠키에 대한 설명을 가져옴</td>
+    <td>getPath()</td>
+    <td>쿠키의 디렉터리 정보를 가져옴</td>
   </tr>
   <tr>
-    <td>getComment()</td>
-    <td>쿠키에 대한 설명을 가져옴</td>
+    <td>getValue()</td>
+    <td>쿠키의 설정 값 가져옴</td>
   </tr>
   <tr>
-    <td>getComment()</td>
-    <td>쿠키에 대한 설명을 가져옴</td>
+    <td>setComment(String)</td>
+    <td>쿠키에 대한 설명을 설정함</td>
   </tr>
   <tr>
-    <td>getComment()</td>
-    <td>쿠키에 대한 설명을 가져옴</td>
+    <td>setDomain()</td>
+    <td>쿠키의 유효한 도메인을 설정함</td>
   </tr>
+  <tr>
+    <td>setMaxAge(int)</td>
+    <td>쿠키 유효 기간 설정함</td>
+  </tr>
+  <tr>
+    <td>setValue(String)</td>
+    <td>쿠키값 설정함</td>
+  </tr>
+  </table>
+  
   
 
 
