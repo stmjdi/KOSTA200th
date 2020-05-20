@@ -28,7 +28,7 @@
     - eclipse/oracle 연동
     - ojdbcx.jar파일을 lib 폴더에 위치
   - DataSource
-    - [ConnectionPool](#ConnectionPool)
+    - [ConnectionPool](#Connection-Pool)
       - [JNDI](#JNDI)
 
 - - -
