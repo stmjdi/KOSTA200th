@@ -12,6 +12,7 @@
 - [Cookie API](#cookie-api)
 
 4. Connecting Web pages with using Session
+- [Session](#session)
 - [Process using Session](#session-process)
 - [Session API](#session-api)
 
@@ -102,10 +103,6 @@ HTTP 프로토콜 - Server-Client 통신 시 stateless 방식으로 통신
     <td>쿠키에 대한 설명을 가져옴</td>
   </tr>
   <tr>
-    <td>getComment()</td>
-    <td>쿠키에 대한 설명을 가져옴</td>
-  </tr>
-  <tr>
     <td>getDomain()</td>
     <td>쿠키의 유효한 도메인 정보를 가져옴</td>
   </tr>
@@ -142,7 +139,18 @@ HTTP 프로토콜 - Server-Client 통신 시 stateless 방식으로 통신
     <td>쿠키값 설정함</td>
   </tr>
   </table>
-  
+
+
+## Session
+> 웹 페이지들 사이의 공유 정보를 서버에 저장해 두고 웹 페이지들을 매개해 주는 방법
+- 특징
+  - 정보가 서버의 메모리에 저장
+  - 브라우저의 session 연동은 session cookie를 이용
+  - Cookie보다 보안에 유리
+  - 서버에 부하를 줄 수 있음
+  - 브라우저(사용자) 당 한 개의 session(sessionId)이 생성
+  - session은 유효 시간을 가짐(default : 30min)
+  - 로그인 상태 유지 기능이나 쇼핑몰의 장바구니 담기 기능 등에 주로 사용
   
 ## Session Process
 1. 브라우저로 사이트 접속
