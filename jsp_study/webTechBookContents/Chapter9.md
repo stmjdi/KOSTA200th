@@ -3,7 +3,7 @@
 1. [Session Tracking](#Session-Tracking)
 
 2. Connecting Web pages with using "hidden" tag & URL Rewriting
-- [<hidden> tag](#"hidden"-tag)
+- ["hidden" tag](#"hidden"-tag)
 - [URL Rewriting](#url-rewriting)
 
 3. Connecting Web pages using Cookie
