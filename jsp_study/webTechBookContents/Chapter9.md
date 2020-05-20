@@ -180,7 +180,7 @@ HTTP 프로토콜 - Server-Client 통신 시 stateless 방식으로 통신
   <tr>
     <td>long</td>
     <td>getCreationTime()</td>
-    <td>1970년 1월 1일 0시 0분을 기준으로 현재 session이 생성된 시간까지 경과한 시간을 계산하여 1/1000초 값으로 반환ㄱ</td>
+    <td>1970년 1월 1일 0시 0분을 기준으로 현재 session이 생성된 시간까지 경과한 시간을 계산하여 1/1000초 값으로 반환</td>
   </tr>
   <tr>
     <td>String</td>
