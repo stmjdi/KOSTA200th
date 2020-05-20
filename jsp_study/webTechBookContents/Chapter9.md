@@ -26,7 +26,7 @@ HTTP 프로토콜 - Server-Client 통신 시 stateless 방식으로 통신
 각 웹 페이지의 상태나 정보를 다른 페이지들과 공유하지 않는 방식
 </code></pre>
 - 웹 페이지 연동 방법
-  - <hidden> tag
+  - "hidden" tag
   - URL Rewriting
   - Cookie
   - Session
