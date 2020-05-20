@@ -20,8 +20,7 @@
 
 ## Session Tracking
 > 사용자 입장에서 웹 페이지 사이의 상태나 정보를 공유하도록 하기 위해 구현해야 하는 웹 페이지 연결 기능
-<pre><code>
---참고--
+<pre><code>--참고--
 HTTP 프로토콜 - Server-Client 통신 시 stateless 방식으로 통신
 -- stateless --
 각 웹 페이지의 상태나 정보를 다른 페이지들과 공유하지 않는 방식
