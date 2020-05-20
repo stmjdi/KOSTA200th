@@ -170,7 +170,7 @@ HTTP 프로토콜 - Server-Client 통신 시 stateless 방식으로 통신
   <tr>
     <td>Object</td>
     <td>getAttribute(String name)</td>
-    <td>속성 이름이 name인 속성 가밧을 Object 타입으로 반환. 해당 속성 이름이 없을 경우 null 값을 반환</td>
+    <td>속성 이름이 name인 속성 값을 Object 타입으로 반환. 해당 속성 이름이 없을 경우 null 값을 반환</td>
   </tr>
   <tr>
     <td>Enumeration</td>
