@@ -8,5 +8,5 @@
 > 실제 Servlet의 매핑 이름
 
 3. Filter API
-- [관련 API](../Chapter9.md)
+- [관련 API](Chapter9.md)
 - 
