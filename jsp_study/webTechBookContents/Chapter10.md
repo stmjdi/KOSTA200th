@@ -61,6 +61,7 @@
 
 
 ## Filter API
+> 각 Servlet의 공통 작업을 미리 처리하도록 하는 기능
 - methods declared in 'Filter' Interface
 <table>
     <tr>
