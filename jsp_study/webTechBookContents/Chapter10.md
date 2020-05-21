@@ -9,8 +9,8 @@
 
 3. Filter API
 - [관련 API](#filter-api)
-- [User Filter Example]()
-- [Response Filter]()
+- [User Filter Example](filterEx/encoding)
+- [Response Filter](filter/respFilter)
 
 4. [Listener API](#listener-api)
 <br>
@@ -101,7 +101,55 @@
     </tr>
 </table>
 
-
+## Listener API
+- related Listeners
+<table>
+    <tr>
+        <th>Servlet Listener</th>
+        <th>Abstract method</th>
+        <th>function</th>
+    </tr>
+    <tr>
+        <td>ServletContextAttributeListener</td>
+        <td>attributeAdded()<br>attributeRemoved()<br>attributeReplaced()</td>
+        <td>Context 객체에 속성 추가/제거/수정 이벤트 발생 시 처리</td>
+    </tr>
+    <tr>
+        <td>HttpSessionListener</td>
+        <td>sessionCreated()<br>sessionDestroyed()</td>
+        <td>session 객체의 생성/소멸 이벤트 발생 시 처리</td>
+    </tr>
+    <tr>
+        <td>ServletRequestListener</td>
+        <td>requestInitialized()<br>requestDestroyed()</td>
+        <td>client의 요청 이벤트 발생 시 처리</td>
+    </tr>
+    <tr>
+        <td>ServletRequestAttributeListener</td>
+        <td>attributeAdded()<br>attributeRemoved()<br>attributeReplaced()</td>
+        <td>요청 객체에 속성 추가/제거/수정 이벤트 발생 시 처리</td>
+    </tr>
+    <tr>
+        <td>HttpSessionBindingListener</td>
+        <td>valueBound()<br>valueUnbound()</td>
+        <td>session에 바인딩/언바인딩된 객체를 알려주는 이벤트 발생 시 처리</td>
+    </tr>
+    <tr>
+        <td>HttpSessionAttributeListener</td>
+        <td>attributeAdded()<br>attributeRemoved()<br>attributeReplaced()</td>
+        <td>session 객체에 속성 추가/제거/수정 이벤트 발생 시 처리</td>
+    </tr>
+    <tr>
+        <td>ServletContextListener</td>
+        <td>contextInitialized()<br>contextDestroyed()</td>
+        <td>context 객체의 생성/소멸 이벤트 발생 시 처리</td>
+    </tr>
+    <tr>
+        <td>HttpSessionActivationListener</td>
+        <td>sessionDidActivate()<br>sessionWillPassivate()</td>
+        <td>session의 활성화/비활성화 이벤트 발생 시 처리</td>
+    </tr>
+</table>
 
 
 
