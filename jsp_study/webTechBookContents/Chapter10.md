@@ -80,7 +80,7 @@
         <td>필터 소멸 시 컨테이너에 의해 초기화 작업 수행</td>
     </tr>
 </table>
-<br>
+
 - methods of 'FilterConfig'
 <table>
     <tr>
