@@ -9,8 +9,8 @@
 
 3. Filter API
 - [관련 API](#filter-api)
-- [User Filter Example](filterEx/encoding)
-- [Response Filter](filter/respFilter)
+- [User Filter Example](filterEx/encoding.java)
+- [Response Filter](filter/respFilter.java)
 
 4. [Listener API](#listener-api)
 <br>
