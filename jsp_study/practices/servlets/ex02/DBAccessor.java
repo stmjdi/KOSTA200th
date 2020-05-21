@@ -1,4 +1,4 @@
-package servlets;
+package login_regi;
 
 import java.sql.*;
 
@@ -74,5 +74,19 @@ public class DBAccessor {
 		}
 		closeAll();
 		return false;
+	}
+	
+	void dbInsert(String[] infos) throws SQLException{
+		pstmt=conn.prepareStatement("insert into Login values(?,?,?,?,?,?)");
+		
+		for(int i=1;i<=infos.length;i++) {
+			//System.out.println(infos[i-1]);
+			pstmt.setString(i, infos[i-1]);
+			
+		}
+		int result = pstmt.executeUpdate();
+		System.out.println(result+(result>1?" records":" record")+" inserted.");
+		
+		closeAll();
 	}
 }
