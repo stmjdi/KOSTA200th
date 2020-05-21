@@ -4,11 +4,11 @@
 - Attribute
 - Scope
 
-2. [Servlet URL Patterns](#)
+2. [Servlet URL Patterns](#servlet-url-patterns)
 > 실제 Servlet의 매핑 이름
 
 3. Filter API
-- [관련 API](#)
+- [관련 API](#filter-api)
 - [User Filter Example]()
 - [Response Filter]()
 
@@ -54,7 +54,78 @@
   </tr>
 </table>
 
+<table>
+  <tr>
+    <tr>
+      <th>scope</th>
+      <th>Servlet API</th>
+      <th>Scope of Attribute</th>
+    </tr>
+  <tr>
+     <td>Application Scope</td>
+     <td>ServletContext</td>
+    <td>애플리케이션 전체에 대해 접근</td>
+  </tr>
+  <tr>
+    
+  </tr>
   
+</table>
+
+## Servlet URL Patterns
+- [name]()
+- [directory]()
+- [extension(확장자)]()
+
+
+## Filter API
+- methods declared in 'Filter' Interface
+<table>
+  <tr>
+    <th>method</th>
+    <th>function</th>
+  </tr>
+  <tr>
+    <td>destroy()</td>
+    <td>필터 소멸 시 컨테이너에 의해 호출되어 종료 작업 수헹</td>
+    
+    <td>init()</td>
+  </tr>
+  <tr>
+    <td>doFilter()</td>
+    <td>요청/응답 시 컨테이너에 의해 호출되어 기능 수행</td>
+    <td>필터 생성 시 컨테이너에 의해 호출되어 초기화 작업 수행</td>
+  </tr>
+  <tr>
+   
   
-  
-  
+  </tr>
+</table>
+<br>
+- methods of 'FilterConfig'
+<table>
+  <tr>
+    <th>method</th>
+    <th>function</th>
+  </tr>
+  <tr>
+    <td>getFilterName()</td>
+    <td>getInitParameter(String name)</td>
+    <td>getServletContext()</td>
+  </tr>
+  <tr>
+    <td>필터 이름을 반환</td>
+    <td>매개변수 name에 대한 값을 반환</td>
+    <td>Servlet Context 객체를 반환</td>
+  </tr>
+</table>
+
+
+
+
+
+
+
+
+
+
