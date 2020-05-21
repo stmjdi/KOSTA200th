@@ -32,44 +32,26 @@
   -  MVC의 Model & View의 데이터 전달 기능
 - Scope의 종류와 특징
 <table>
-  <tr>
-    <th>scope</th>
-    <th>Servlet API</th>
-    <th>Scope of Attribute</th>
-  </tr>
-  <tr>
-    <td>Application Scope</td>
-    <td>Session Scope</td>
-    <td>Request Scope</td>
-  </tr>
-  <tr>
-    <td>ServletContext</td>
-    <td>HttpSession</td>
-    <td>HttpServletRequest</td>
-  </tr>
-  <tr>
-    <td>애플리케이션 전체에 대해 접근</td>
-    <td>해당 브라우저에서만 접근</td>
-    <td>해당 요청/응답 사이클에서만 접근</td>
-  </tr>
-</table>
-
-<table>
-  <tr>
     <tr>
-      <th>scope</th>
-      <th>Servlet API</th>
-      <th>Scope of Attribute</th>
+        <th>Scope</th>
+        <th>Servlet API</th>
+        <th>Attribute of Scope</th>
     </tr>
-  <tr>
-     <td>Application Scope</td>
-     <td>ServletContext</td>
-    <td>애플리케이션 전체에 대해 접근</td>
-  </tr>
-  <tr>
-    
-  </tr>
-  
+    <tr>
+        <td>Application Scope</td>
+        <td>ServletContext</td>
+        <td>애플리케이션 전체에 대해 접근</td>
+    </tr>
+    <tr>
+        <td>Session Scope</td>
+        <td>HttpSession</td>
+        <td>브라우저에서만 접근</td>
+    </tr>
+    <tr>
+        <td>Request Scope</td>
+        <td>HttpServletRequest</td>
+        <td>해당 요청/응답 사이클에서만 접근</td>
+    </tr>
 </table>
 
 ## Servlet URL Patterns
@@ -81,43 +63,42 @@
 ## Filter API
 - methods declared in 'Filter' Interface
 <table>
-  <tr>
-    <th>method</th>
-    <th>function</th>
-  </tr>
-  <tr>
-    <td>destroy()</td>
-    <td>필터 소멸 시 컨테이너에 의해 호출되어 종료 작업 수헹</td>
-    
-    <td>init()</td>
-  </tr>
-  <tr>
-    <td>doFilter()</td>
-    <td>요청/응답 시 컨테이너에 의해 호출되어 기능 수행</td>
-    <td>필터 생성 시 컨테이너에 의해 호출되어 초기화 작업 수행</td>
-  </tr>
-  <tr>
-   
-  
-  </tr>
+    <tr>
+        <th>method</th>
+        <th>function</th>
+    </tr>
+    <tr>
+        <td>destroy()</td>
+        <td>필터 소멸 시 컨테이너에 의해 호출되어 종료 작업 수행</td>
+    </tr>
+    <tr>
+        <td>doFilter()</td>
+        <td>요청/응답 시 컨테이너에 의해 호출되어 기능을 수행</td>
+    </tr>
+    <tr>
+        <td>init()</td>
+        <td>필터 소멸 시 컨테이너에 의해 초기화 작업 수행</td>
+    </tr>
 </table>
 <br>
 - methods of 'FilterConfig'
 <table>
-  <tr>
-    <th>method</th>
-    <th>function</th>
-  </tr>
-  <tr>
-    <td>getFilterName()</td>
-    <td>getInitParameter(String name)</td>
-    <td>getServletContext()</td>
-  </tr>
-  <tr>
-    <td>필터 이름을 반환</td>
-    <td>매개변수 name에 대한 값을 반환</td>
-    <td>Servlet Context 객체를 반환</td>
-  </tr>
+    <tr>
+        <th>method</th>
+        <th>function</th>
+    </tr>
+    <tr>
+        <td>getFilterName()</td>
+        <td>필터 이름을 반환</td>
+    </tr>
+    <tr>
+        <td>getInitParameter(String name)</td>
+        <td>매개변수 name에 대한 값 반환</td>
+    </tr>
+    <tr>
+        <td>getServletContext()</td>
+        <td>Servlet context 객체를 반환</td>
+    </tr>
 </table>
 
 
