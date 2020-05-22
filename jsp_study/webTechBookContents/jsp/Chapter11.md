@@ -14,7 +14,7 @@
 
 
 3. Elements of JSP Page
-- [Directive Tag](#)
+- [Directive Tag](# directive-tag)
 - Scripting Element : 주석문, Scriptlet, 표현식, 선언식
 - Expression Language
 - Inner Objects
