@@ -111,5 +111,62 @@
     </tr>
 </table>
 
+<b>5. Core Library</b>
+- Core tag Library
+<table>
+        <tr>
+                <th>기능</th>
+                <th>태그</th>
+                <th>설명</th>
+        </tr>
+        <tr>
+                <td rowspan="2">변수지원</td>
+                <td>set</td>
+                <td>JSP 페이지에서 변수를 지정</td>
+        </tr>
+        <tr>
+                <td>remove</td>
+                <td>지정 변수를 제거</td>
+        </tr>
+        <tr>
+                <td rowspan="4">흐름 제어</td>
+                <td>if</td>
+                <td>조건문 사용</td>
+        </tr>
+        <tr>
+                <td>choose</td>
+                <td>switch문을 사용</td>
+        </tr>
+        <tr>
+                <td>forEach</td>
+                <td>반복문 사용</td>
+        </tr>
+        <tr>
+                <td>forTokens</td>
+                <td>구분자로 분리된 각각의 토큰을 처리할 때 사용</td>
+        </tr>
+        <tr>
+                <td rowspan="3">URL 처리</td>
+                <td>import</td>
+                <td>URL을 이용해 다른 자원을 JSP 페이지에 추가</td>
+        </tr>
+        <tr>
+                <td>redirect</td>
+                <td>response.sendRedirect() 기능을 수행</td>
+        </tr>
+        <tr>
+                <td>url</td>
+                <td>요청 매개변수로부터 URL을 생성</td>
+        </tr>
+        <tr>
+                <td rowspan="2">기타 태그</td>
+                <td>catch</td>
+                <td>예외처리에 사용</td>
+        </tr>
+        <tr>
+                <td>out</td>
+                <td>JspWriter에 내용을 처리한 후 출력</td>
+        </tr>
+</table>
 
 
