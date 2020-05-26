@@ -192,6 +192,6 @@
     </tr>
     <tr>
             <td>formatDate</td>
-            <td>지정한 형식의 날짜르르 표시</td>
+            <td>지정한 형식의 날짜를 표시</td>
     </tr>
 </table>
