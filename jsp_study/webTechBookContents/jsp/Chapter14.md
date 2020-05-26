@@ -169,6 +169,7 @@
         </tr>
 </table>
 <b>6.Formating Tag Library</b>
+
 > 쉽게 원하는 형태의 숫자, 날짜, 문자열 표기가 가능
 - Kinds of Formatting Tag Library (fmt)
 <table>
