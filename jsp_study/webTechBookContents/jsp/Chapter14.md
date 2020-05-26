@@ -112,7 +112,7 @@
 </table>
 
 <b>5. Core Library</b>
-- Core tag Library
+- Core tag Library (c)
 <table>
         <tr>
                 <th>기능</th>
@@ -168,5 +168,29 @@
                 <td>JspWriter에 내용을 처리한 후 출력</td>
         </tr>
 </table>
-
-
+<b>6.Formating Tag Library</b>
+> 쉽게 원하는 형태의 숫자, 날짜, 문자열 표기가 가능
+- Kinds of Formatting Tag Library (fmt)
+<table>
+    <tr>
+            <th>분류</th>
+            <th>태그</th>
+            <th>설명</th>
+    </tr>
+    <tr>
+            <td rowspan="4">Formatting</td>
+            <td>timeZone</td>
+            <td rowspan="2">둘다 지정한 국가의 시간을 지정하는 태그</td>
+    </tr>
+    <tr>
+            <td>setTimeZone</td>
+    </tr>
+    <tr>
+            <td>formatNumber</td>
+            <td>표시할 숫자의 형식을 지정</td>
+    </tr>
+    <tr>
+            <td>formatDate</td>
+            <td>지정한 형식의 날짜르르 표시</td>
+    </tr>
+</table>
