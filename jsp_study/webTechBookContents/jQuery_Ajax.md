@@ -6,7 +6,7 @@
   - 서버의 처리를 기다리지 않고 비동기 요청이 가능
 
 - jQuery Ajax 사용법
-<pre><code>$.ajax{
+<pre><code>$.ajax({
   type: "post or get",
   async: "true or false",
   url: "요청할 URL",
