@@ -1,14 +1,14 @@
 - <b>index.html</b>
-  - <b>astro-photos.jsp</b>
+  - astro-photos.jsp
     - speakers-detail.jsp (plan to rename file)
     - PhotosController.java (Servlet)
     - photos table (oracle)
   - astro-Events.jsp (in plan)
-  - <b>locations.jsp</b>
+  - locations.jsp
     - location-detail.jsp (in plan)
     - LocationController.java (Servlet)
     - locDatas table (oracle)
-  - <b>comments.jsp</b>
+  - comments.jsp
     - comments-detail.jsp (in plan)
     - commentsController.java (Servlet)
     - comments table (oracle)
