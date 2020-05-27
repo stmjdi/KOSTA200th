@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib version="2.0" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd ">
+  
+<description>CommonUtilsn functions library</description>
+<display-name>CommonUtils functions</display-name>
+<tlib-version>1.1</tlib-version>
+<short-name>cutil</short-name>
+<uri>tld/CommonUtils.tld</uri>
+ 
+<function>
+    <description>String append Nim</description>
+    <name>getTest</name>
+    <function-class>servlets.CommonUtils</function-class>
+    <function-signature>java.lang.String getTest(java.lang.String)</function-signature>
+    <example>
+    ${cutil:getTest(str)}
+    </example>
+</function>
+ 
+<function>
+    <description>find max Number</description>
+    <name>MaxNum</name>
+    <function-class>servlets.CommonUtils</function-class>
+    <function-signature>java.lang.Integer MaxNum(java.lang.Integer, java.lang.Integer)</function-signature>
+    <example>
+    ${cutil:MaxNum(n1,n2)}
+    </example>
+</function>
+ 
+<function>
+    <description>Simple Calculator</description>
+    <name>Calc</name>
+    <function-class>servlets.CommonUtils</function-class>
+    <function-signature>java.lang.Integer Calc(java.lang.Integer, java.lang.Character)</function-signature>
+    <example>
+    ${cutil:Calc(n,opr)}
+    </example>
+</function>
+ 
+</taglib>
