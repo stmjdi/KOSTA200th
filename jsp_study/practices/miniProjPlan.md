@@ -1,5 +1,6 @@
 - <b>index.html</b>
   - astro-photos.jsp
+    - upload-photos.jsp (in plan)
     - speakers-detail.jsp (plan to rename file)
     - PhotosController.java (Servlet)
     - photos table (oracle)
