@@ -41,7 +41,8 @@
 <body>
 <h1>Here is index.jsp Page</h1>
 <form action="test/insert" method="post">
-Input : <input type="text" name="nums">
+Input nums : <input type="text" name="nums"><br>
+Input id : <input type="text" name="id">
 <input type="submit" value="submit">
 </form>
 
