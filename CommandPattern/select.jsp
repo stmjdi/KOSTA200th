@@ -1,9 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ page import="java.util.ArrayList, testPack.*" %> <!-- dispatcher -->
-<%@ taglib prefix="c"   uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page import="java.util.ArrayList, testPack.*, models.*" %> <!-- dispatcher -->
 
-<%ArrayList<Pair> arr = (ArrayList<Pair>)request.getAttribute("sels"); %>
+
+<%ArrayList<TestVO> arr = (ArrayList<TestVO>)request.getAttribute("sels"); %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,8 +21,8 @@ body{
 
 <%for(int i=0;i<arr.size();i++){ %>
 	<hr>
-	Nums : <%=arr.get(i).nums %><br><br>
-	ID : <%=arr.get(i).id %>
+	Nums : <%=arr.get(i).getNums() %><br><br>
+	ID : <%=arr.get(i).getId() %>
 	<hr>
 <%} %>
 

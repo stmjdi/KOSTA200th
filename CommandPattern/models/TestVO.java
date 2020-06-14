@@ -4,6 +4,13 @@ public class TestVO {
 	private int nums;
 	private int id;
 	
+	public TestVO() {}
+	
+	public TestVO(int nums, int id) {
+		this.nums=nums;
+		this.id=id;
+	}
+	
 	public int getNums() {
 		return nums;
 	}

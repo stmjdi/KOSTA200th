@@ -11,7 +11,7 @@ import javax.servlet.RequestDispatcher;
 /**
  * Servlet implementation class TestController
  */
-@WebServlet("/*.do")
+@WebServlet("*.do")
 public class TestController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -22,9 +22,10 @@ public class TestController extends HttpServlet {
 		
 		ActionForward forward=null;
 		Action action=null;
-		
+//		System.out.println(path);
 		if(path.equals("main.do")) {
 			String from = request.getParameter("but");
+			System.out.println(from);
 			
 			forward=new ActionForward();
 			
@@ -39,6 +40,12 @@ public class TestController extends HttpServlet {
 			
 		} else if(path.equals("insert.do")) {
 			// need to fill this space (not yet to create InsertAction)
+			forward=new ActionForward();
+			forward.setPath("insert.jsp");
+			forward.setRedirect(false);
+		} else if(path.equals("insertAction.do")) {
+			action=new InsertAction();
+			forward=action.execute(request, response);
 		}
 		
 		

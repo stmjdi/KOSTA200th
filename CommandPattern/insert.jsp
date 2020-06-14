@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<form action="insert.do" method="post">
+<form action="insertAction.do" method="post">
 Input Nums : <input type="text" name="nums">
 Input Id : <input type="text" name="id">
 <input type="submit" value="submit">
