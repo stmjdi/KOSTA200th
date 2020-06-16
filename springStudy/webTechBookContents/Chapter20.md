@@ -38,7 +38,7 @@
   </tr>
 </table>
 
-* 보조 기능에는 로깅 / 보안 / 트랜잭션 등이 있음
+(* 보조 기능에는 로깅 / 보안 / 트랜잭션 등이 있음)
 
 - Spring API를 이용한 AOP 기능 구현 과정
   1. target class를 지정
@@ -49,3 +49,47 @@
   6. getBean() 메서드로 bean 객체에 접근해 사용
 
 
+- Spring API에서 제공하는 여러 Advice Interface
+<table>
+  <tr>
+    <th>Interface</th>
+    <th>Abstract Method</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>MethodBeforeAdvice</td>
+    <td>void before(Method method,<br>
+      Object[] args,<br>
+      Object target)<br>
+      throws Throwable</td>
+    <td>해당 메서드가 실행되기 전 실행</td>
+  </tr>
+  <tr>
+    <td>AfterReturningAdvice</td>
+    <td>void afterReturning(<br>
+      Object returnValue,<br>
+      method method,<br>
+      Object[] object,<br>
+      Object target)<br>
+      throws Throwable</td>
+    <td>해당 메서드가 실행된 후 실행</td>
+  </tr>
+  <tr>
+    <td>ThrowsAdvice</td>
+    <td>void afterThrowing(<br>
+      Method method,<br>
+      Object[] args,<br>
+      Object target,<br>
+      Exception ex)</td>
+    <td>메서드에서예외 발생 시 실행</td>
+  </tr>
+  <tr>
+    <td>MethodInterceptor</td>
+    <td>Object invoke(<br>
+      MethodInvocation<br>
+      invocation)<br>
+      throws Throwable</td>
+    <td>메서드의실행 전/후와 예외 발생 시 실행</td>
+  </tr>
+</table>
+      
