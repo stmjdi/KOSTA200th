@@ -71,7 +71,7 @@
   </tr>
 </table>
 
-- Files for 'MultiActionController' Practice
+- Files for ['MultiActionController' Practice](../example-codes/MVCPractice/MultiAction)
 <table>
   <tr>
     <th>File</th>
