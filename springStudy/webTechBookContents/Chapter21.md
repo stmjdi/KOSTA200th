@@ -50,5 +50,56 @@
   7. View의 처리 결과를 DispatcherServlet으로 보냄
   8. DispatcherServlet은 최종 결과를 브라우저로 전송
 
+- Spring Classes for Practice
+<table>
+  <tr>
+    <th>Class</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>MultiActionController</td>
+    <td>URL 요청명으로 바로 controller를 지정해서 사용할 수 있음</td>
+  </tr>
+  <tr>
+    <td>PropertiesMethodNameResolver</td>
+    <td>URL 요청명으로 controller의 설정 파일에서 미리 설정된 메서드를 바로 호출해서 사용</td>
+  </tr>
+  <tr>
+    <td>InternalResourceViewResolver</td>
+    <td>JSP나 html 파일과 같이 web application의 내부 자원 이용해 View를 생성하는 기능을 제공<br>
+    기본적으로 사용하는 View Class이며 prefix와 suffix property를 이용해 경로 지정 가능</td>
+  </tr>
+</table>
+
+- Files for ['MultiActionController' Practice](../example-codes/MVCPractice/MultiAction)
+<table>
+  <tr>
+    <th>File</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>web.xml</td>
+    <td>브라우저에서 *.do로 요청하면 spring의 DispatcherServlet class가 요청을 받을 수 있게 Servlet Mapping을 설정</td>
+  </tr>
+  <tr>
+    <td>action-servlet.xml</td>
+    <td>Spring에서 필요한 bean들을 설정</td>
+  </tr>
+  <tr>
+    <td>UserController.java</td>
+    <td>매핑된 요청에 대해 controller의 기능을 수행</td>
+  </tr>
+  <tr>
+    <td>loginForm.jsp</td>
+    <td>로그인 창</td>
+  </tr>
+  <tr>
+    <td>result.jsp</td>
+    <td>로그인 결과를 보여주는 jsp</td>
+  </tr>
+</table>
+
+
+  
 
     
