@@ -1,6 +1,8 @@
 # Chapter 23. MyBatis
 > 복잡한 SQL문을 표준화된 방법으로 사용 가능하도록 하는 SQL framework
 
+상세 : [MyBatis API](https://mybatis.org/mybatis-3/ko/index.html)
+
 - 특징
   - SQL 실행 결과를 java beans or Map 객체에 매핑해주는 persistence 솔루션으로 관리
     - SQL문을 소스 코드가 아닌 XML로 분리
@@ -15,3 +17,50 @@
 4. 전달한 매개변수와 선택한 SQL문을 결합
 5. 매개변수와 결합된 SQL문을 DBMS에서 실행
 6. DBMS에서 반환된 데이터를 application에서 제공하는 적당한 매개변수에 저장한 후 반환
+
+
+- 필요 실행파일
+  - SqlMapConfig.xml (dataSource 설정 및 sql문 xml 파일 위치 지정)
+  - member.xml (관련 sql문 설정)
+  
+- SqlSession(Java) class에서 제공하는 여러 메소드
+<table>
+  <tr>
+    <th>Method</th>
+    <th>function</th>
+  </tr>
+  <tr>
+    <td>List selectList(query_id)</td>
+    <td>id에 대한 select문을 실행한 후 여러 레코드를 List로 반환</td>
+  </tr>
+  <tr>
+    <td>List selectList(query_id,조건)</td>
+    <td>id에 대한 select문을 실행하면서 사용되는 조건도 전달</td>
+  </tr>
+  <tr>
+    <td>T selectOne(query_id)/td>
+    <td>id에 대한 select문을 실행한 후 지정한 타입으로 한 개의 레코드를 반환</td>
+  </tr>
+  <tr>
+    <td>T selectOne(query_id,조건)</td>
+    <td>id에 대한 select문을 실행하면서 사용되는 조건도 전달</td>
+  </tr>
+  <tr>
+    <td>Map<'K,V'> selectMap(query_id,조건)</td>
+    <td>id에 대한 select문을 실행하면서 사용되는 조건도 전달. Map 타입으로 레코드 반환</td>
+  </tr>
+  <tr>
+    <td>int insert(query_id,Object obj)</td>
+    <td>id에 대한 insert문을 실행하면서 obj 객체의 값을 테이블에 추가</td>
+  </tr>
+  <tr>
+    <td>int update(query_id,Object obj)</td>
+    <td>obj 객체의 값을 조건문의 수정 값으로 사용해 id에 대한 update문을 실행</td>
+  </tr>
+  <tr>
+    <td>int delete(query_id,Object obj)</td>
+    <td>obj 객체의 값을 조건문의 조건 값으로 사용해 id에 대한 delete문을 실행</td>
+  </tr>
+</table>
+
+  
