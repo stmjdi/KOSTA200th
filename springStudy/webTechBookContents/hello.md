@@ -9,7 +9,7 @@
 6. https://gmlwjd9405.github.io/2018/12/02/spring-annotation-types.html -- spring annotations description
 7. http://wonwoo.ml/index.php/post/69 -- java proxy 기능으로 aop 구현
 8. http://wonwoo.ml/index.php/post/33 - -aspectJ로 aop 구현
-
+9. https://mybatis.org/mybatis-3/ko/index.html -- MyBatis API document
 
 <hr>
 
