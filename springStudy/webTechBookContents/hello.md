@@ -7,6 +7,8 @@
 4. https://blog.woniper.net/338 -- spring IoC Container _ about beanFacotry& ApplicationContext
 5. http://ldg.pe.kr/framework_reference/spring/ver1.2.2/html/beans.html -- 4.의 상세 
 6. https://gmlwjd9405.github.io/2018/12/02/spring-annotation-types.html -- spring annotations description
+7. http://wonwoo.ml/index.php/post/69 -- java proxy 기능으로 aop 구현
+8. http://wonwoo.ml/index.php/post/33 - -aspectJ로 aop 구현
 
 
 <hr>
