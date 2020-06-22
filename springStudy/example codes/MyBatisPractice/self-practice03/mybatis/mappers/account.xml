@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="mapper.account">
+	<resultMap id="accResult" type="accountVO">
+		<result property="name" column="name"/>
+		<result property="balance" column="balance"/>
+		<result property="recent" column="recent"/>
+	</resultMap>
+	<select id="selectAllAccount" resultMap="accResult">
+		select * from person
+	</select>
+	
+	<insert id="insertPerson" parameterType="accountVO">
+		insert into person values(#{name},#{balance},#{recent})
+	</insert>
+	
+	<update id="updateBalance" parameterType="accountVO">
+		update person set balance=#{balance} where name=#{name}
+	</update>
+	
+	<delete id="updateRecent" parameterType="accountVO">
+		update person set recent=#{recent} where name=#{name}
+	</delete>
+
+</mapper>
