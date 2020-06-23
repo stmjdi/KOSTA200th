@@ -12,7 +12,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		select * from members
 	</select>
 	<insert id="insertMember" parameterType="memberVO">
-		insert into members value(#{id},#{pwd})
+		insert into members values(#{id},#{pwd})
 	</insert>
 	<delete id="deleteMember" parameterType="String">
 		delete from members where id=#{id}
