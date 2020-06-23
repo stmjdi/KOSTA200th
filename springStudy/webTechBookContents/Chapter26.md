@@ -45,6 +45,42 @@
   </tr>
 </table>
 
+2. <b>@RequestParam</b>
+> 단일 parameter를 전달 받을 때 사용하는 annotation
+
+### Example
+<pre><code>@Controller("mainController")
+@RequestMapping("/test")
+public class MainController {
+	@ModelAttribute("view2")
+	public String view2() {
+		return "ModelAttribute view2!!";
+	}
+	
+	@RequestMapping("inputForm.do")
+	public String inputForm(Model model) {
+		return "inputForm";
+	}
+	
+   @RequestMapping(value="/test1.do" ,method=RequestMethod.GET)
+   public ModelAndView main1(@RequestParam Map<String,String> info,HttpServletRequest request, HttpServletResponse response)  throws Exception{
+      ModelAndView mav=new ModelAndView();
+      mav.addObject("msg","main1");
+      mav.addObject("id",info.get("id"));
+      mav.addObject("name",info.get("name"));
+      
+      mav.setViewName("index");
+      return mav;
+   }
+
+   @RequestMapping(value="/main2.do" ,method = RequestMethod.GET)
+   public ModelAndView main2(HttpServletRequest request, HttpServletResponse response) throws Exception{
+      ModelAndView mav=new ModelAndView();
+      mav.addObject("msg","main2");
+      mav.setViewName("index");
+      return mav;
+   }
+}
+</code></pre>
 
 
-  
