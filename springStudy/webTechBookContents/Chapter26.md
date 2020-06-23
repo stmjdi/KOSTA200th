@@ -88,5 +88,7 @@ public class MainController {
 > Class들의 bean을 직접 java code에서 생성해서 사용하도록 하는 Annotation
 
 - 특징
-
+	- 기존 XML 파일에서 각각의 bean을 DI로 주입했던 기능을 코드에서 annotation으로 자동으로 수행
+	- @Autowired를 사용하면 별도의 setter나 생성자 없이 속성에 bean을 주입할 수 있음
+	
 
