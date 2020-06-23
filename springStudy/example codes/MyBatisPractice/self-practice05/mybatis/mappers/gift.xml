@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="mapper.gift">
+	<resultMap id="giftMap" type="giftVO">
+		<result property="gno" column="gno"/>
+		<result property="gname" column="gname"/>
+		<result property="g_start" column="g_start"/>
+		<result property="g_end" column="g_end"/>
+	</resultMap>
+	<select id="selectAllList" resultMap="giftMap">
+		select * from gift
+	</select>
+	
+</mapper>
