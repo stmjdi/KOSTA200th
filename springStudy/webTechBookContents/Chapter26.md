@@ -84,3 +84,9 @@ public class MainController {
 </code></pre>
 
 
+3. @Autowired
+> Class들의 bean을 직접 java code에서 생성해서 사용하도록 하는 Annotation
+
+- 특징
+
+
