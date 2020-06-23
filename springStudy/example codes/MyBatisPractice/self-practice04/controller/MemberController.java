@@ -26,7 +26,7 @@ public class MemberController {
 	MemberService memberService;
 	
 	@RequestMapping(value="/result.do", method=RequestMethod.GET)
-	public ModelAndView login(@ModelAttribute("mem") MemberVO mv, HttpServletRequest request, HttpServletResponse response) {
+	public ModelAndView result(@ModelAttribute("mem") MemberVO mv, HttpServletRequest request, HttpServletResponse response) {
 		ModelAndView mav = new ModelAndView();
 		
 		if(memberService.isValidIdf(mv.getId(), mv.getPwd())) {
@@ -38,7 +38,7 @@ public class MemberController {
 	
 	
 	@RequestMapping(value="/login.do", method=RequestMethod.GET)
-	public String result(Model model) {
+	public String login(Model model) {
 		return "login";
 	}
 	
@@ -61,7 +61,5 @@ public class MemberController {
 		}
 	}
 }
-
-
 
 
