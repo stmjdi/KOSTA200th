@@ -7,4 +7,5 @@
   - MyBatis
   - Annotation
   - DI
+  - MVC
   - REST API (예정)
